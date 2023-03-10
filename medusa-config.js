@@ -61,6 +61,12 @@ const plugins = [
 			access_key_id: process.env.SPACE_ACCESS_KEY_ID,
 			secret_access_key: process.env.SPACE_SECRET_ACCESS_KEY
 		}
+	},
+	{
+		resolve: `medusa-plugin-segment`,
+		options: {
+			write_key: process.env.SEGMENT_WRITE_KEY
+		}
 	}
 ];
 /** @type {import('@medusajs/medusa').ConfigModule} */
